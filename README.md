@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 We use <a href="https://wandb.ai/">wandb</a> to keep a log of our experiments.
 If you don't have a wandb account, just install it and use it as offline mode.
-```
+```wandb
 pip install wandb
 wandb off
 ```
@@ -35,7 +35,6 @@ wandb off
 ## Training & Evaluation
 
 To train the model(s) in the paper, run this command:
-
 ```train
 python ./fedml_experiments/standalone/domain_generalization/main.py \
        --model dapperfl 
@@ -49,20 +48,20 @@ python ./fedml_experiments/standalone/domain_generalization/main.py \
 
 You can modify the arguments to run DapperFL on other settings. The arguments are described as follows:
 
-| Arguments             | Description                                                                                                     |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------|
-| `prefix`              | A prefix for logging.                                                                                           |
-| `communication_epoch` | Total communication rounds of Federated Learning.                                                               |
-| `local_epoch`         | Local epochs for local model updating.                                                                          |
-| `parti_num`           | Number of participants.                                                                                         |
-| `dataset`             | Datasets used in the experiment. Options: `fl_officecaltech`, `fl_digits`.                                      |
-| `pr_strategy`         | Pruning ratio used to prune local models. Options: `0` (without pruning), `0.1`~`0.9`, `AD` (adaptive pruning). |
-| `backbone`            | Backbone global model. Options: `resnet10`, `resnet18`.                                                         |
-| `alpha`               | Coefficient alpha in co-pruning. Default: `0.9`.                                                                |
-| `alpha_min`           | Coefficient alpha_min in co-pruning. Default: `0.1`.                                                            |
-| `epsilon`             | Coefficient epsilon in co-pruning. Default: `0.2`.                                                              |
-| `reg_coeff`           | Coefficient for L2 regularization. Default: `0.01`.                                                             |                                                                     |
-| `seed`                | Random seed.                                                                                                    |
+| Arguments             | Description                                                                                                       |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------|
+| `prefix`              | A prefix for logging.                                                                                             |
+| `communication_epoch` | Total communication rounds of Federated Learning.                                                                 |
+| `local_epoch`         | Local epochs for local model updating.                                                                            |
+| `parti_num`           | Number of participants.                                                                                           |
+| `dataset`             | Datasets used in the experiment. Options: `fl_officecaltech`, `fl_digits`.                                        |
+| `pr_strategy`         | Pruning ratio used to prune local models. Options: `0` (without pruning), `0.1` ~ `0.9`, `AD` (adaptive pruning). |
+| `backbone`            | Backbone global model. Options: `resnet10`, `resnet18`.                                                           |
+| `alpha`               | Coefficient alpha in co-pruning. Default: `0.9`.                                                                  |
+| `alpha_min`           | Coefficient alpha_min in co-pruning. Default: `0.1`.                                                              |
+| `epsilon`             | Coefficient epsilon in co-pruning. Default: `0.2`.                                                                |
+| `reg_coeff`           | Coefficient for L2 regularization. Default: `0.01`.                                                               |                                                                     |
+| `seed`                | Random seed.                                                                                                      |
 
 [//]: # (>📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results &#40;section below&#41;.)
 
