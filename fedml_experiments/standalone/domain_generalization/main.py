@@ -38,6 +38,8 @@ def parse_args():
     parser.add_argument('--communication_epoch', type=int, default=100, help='Total communication rounds of Federated Learning.')
     parser.add_argument('--local_epoch', type=int, default=5, help='Local epochs for local model updating.')
     parser.add_argument('--parti_num', type=int, default=10, help='Number of participants.')
+    parser.add_argument('--model', type=str, default='dapperfl', help='Name of FL framework.',
+                        choices=get_all_models())
     parser.add_argument('--dataset', type=str, default='fl_officecaltech',  # fl_officecaltech fl_digits
                         choices=DATASET_NAMES, help='Datasets used in the experiment.')
     parser.add_argument('--pr_strategy', type=str, default='AD', help='Model pruning strategy.')
@@ -55,8 +57,6 @@ def parse_args():
     parser.add_argument('--rand_dataset', type=int, default=1, help='The random dataset.')
     parser.add_argument('--learning_decay', type=bool, default=False, help='The Option for Learning Rate Decay')
     parser.add_argument('--averaing', type=str, default='weight', help='The Option for averaging strategy')
-    parser.add_argument('--model', type=str, default='dapperfl', help='Name of FL framework.',
-                        choices=get_all_models())
     parser.add_argument('--online_ratio', type=float, default=1, help='The Ratio for Online Clients')
 
 

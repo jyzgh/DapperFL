@@ -54,6 +54,7 @@ You can modify the arguments to run DapperFL on other settings. The arguments ar
 | `communication_epoch` | Total communication rounds of Federated Learning.                                                                 |
 | `local_epoch`         | Local epochs for local model updating.                                                                            |
 | `parti_num`           | Number of participants.                                                                                           |
+| `model`               | Name of FL framework.                                                                                             |
 | `dataset`             | Datasets used in the experiment. Options: `fl_officecaltech`, `fl_digits`.                                        |
 | `pr_strategy`         | Pruning ratio used to prune local models. Options: `0` (without pruning), `0.1` ~ `0.9`, `AD` (adaptive pruning). |
 | `backbone`            | Backbone global model. Options: `resnet10`, `resnet18`.                                                           |
