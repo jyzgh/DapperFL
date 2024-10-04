@@ -8,8 +8,8 @@
   <a href="#"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-%3E1.9-orange"></a>
 </p>
 
-This repository is the official implementation of [DapperFL: Domain Adaptive Federated Learning
-with Model Fusion Pruning for Edge Devices]. (Accepted by NeurIPS 2024)
+This repository is the official implementation of [**DapperFL: Domain Adaptive Federated Learning
+with Model Fusion Pruning for Edge Devices**]. (Accepted by **NeurIPS 2024**)
 
 
 [//]: # (>📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials)
