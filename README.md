@@ -9,7 +9,7 @@
 </p>
 
 This repository is the official implementation of [DapperFL: Domain Adaptive Federated Learning
-with Model Fusion Pruning for Edge Devices].
+with Model Fusion Pruning for Edge Devices]. (Accepted by NeurIPS 2024)
 
 
 [//]: # (>📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials)
